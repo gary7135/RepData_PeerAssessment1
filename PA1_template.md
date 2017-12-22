@@ -35,7 +35,7 @@ p1
 ## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
 ```
 
-![](PA1_template_files/figure-html/steps per day-1.png)<!-- -->
+![](PA1_template_files/figure-html/steps_per_day-1.png)<!-- -->
 
 ```r
 #summary of steps taken per day (total, mean, median)
@@ -94,7 +94,7 @@ p2 <- ggplot(interval, aes(interval, mean_steps)) +
 p2
 ```
 
-![](PA1_template_files/figure-html/steps over 5 min interval-1.png)<!-- -->
+![](PA1_template_files/figure-html/steps_over_5_min_interval-1.png)<!-- -->
 
 ```r
 #which interval has the highest mean steps
@@ -157,7 +157,7 @@ p3 <- ggplot(data = summary_steps2) +
 p3
 ```
 
-![](PA1_template_files/figure-html/Imputing missing values-1.png)<!-- -->
+![](PA1_template_files/figure-html/Imputing_missing_values-1.png)<!-- -->
 
 ```r
 #original steps mean
@@ -200,5 +200,5 @@ ggplot(df3)+
     ggtitle('Mean Steps Per Interval by Weekend/Weekdays')
 ```
 
-![](PA1_template_files/figure-html/Mean Steps Per Interval by Weekend/Weekdays-1.png)<!-- -->
+![](PA1_template_files/figure-html/Mean_Steps_Per_Interval_by_Weekend_Weekdays-1.png)<!-- -->
 

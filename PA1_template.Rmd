@@ -21,7 +21,7 @@ df <- read.csv(paste0('/Users/garymu/Dropbox (Personal)/Coursera/DS/',
 
 ## What is mean total number of steps taken per day?
 
-```{r steps per day}
+```{r steps_per_day}
 summary_steps <- df %>% 
     filter(!is.na(steps)) %>%
     group_by(date) %>%
@@ -48,7 +48,7 @@ mean total number of steps taken per day is 37.3826 steps, and median is 37.3784
 
 ## What is the average daily activity pattern?
 
-```{r steps over 5 min interval}
+```{r steps_over_5_min_interval}
 
 interval <- df %>% 
                 group_by(interval) %>%
@@ -68,7 +68,7 @@ The interval that has the highest mean steps is interval 835.
 
 ## Imputing missing values
 
-```{r Imputing missing values, message= FALSE}
+```{r Imputing_missing_values, message= FALSE}
 #total dimension of steps data
 dim(df)
 
@@ -116,7 +116,7 @@ The mean increased after we imputed values as expected: 32.48 vs 37.38.
 
 ## Are there differences in activity patterns between weekdays and weekends?
 
-```{r Mean Steps Per Interval by Weekend/Weekdays }
+```{r Mean_Steps_Per_Interval_by_Weekend_Weekdays }
 #convert the dates to weekday
 df2 <- df2 %>% 
             mutate(weekday = weekdays(as.Date(date))) %>%
